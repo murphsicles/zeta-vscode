@@ -1,0 +1,87 @@
+{
+  "Function declaration": {
+    "prefix": "fn",
+    "body": "fn ${1:name}($2) -> ${3:void} {\n    ${4}\n}",
+    "description": "Function declaration with signature"
+  },
+  "Public function": {
+    "prefix": "pubfn",
+    "body": "pub fn ${1:name}($2) -> ${3:void} {\n    ${4}\n}",
+    "description": "Public function declaration"
+  },
+  "Main function": {
+    "prefix": "main",
+    "body": "pub fn main() {\n    ${1}\n}",
+    "description": "Main function entry point"
+  },
+  "Variable declaration": {
+    "prefix": "let",
+    "body": "let ${1:name} = ${2:value};",
+    "description": "Immutable variable declaration"
+  },
+  "Mutable variable": {
+    "prefix": "letmut",
+    "body": "let mut ${1:name} = ${2:value};",
+    "description": "Mutable variable declaration"
+  },
+  "If expression": {
+    "prefix": "if",
+    "body": "if ${1:condition} {\n    ${2}\n} else {\n    ${3}\n}",
+    "description": "If expression"
+  },
+  "While loop": {
+    "prefix": "while",
+    "body": "while ${1:condition} {\n    ${2}\n}",
+    "description": "While loop"
+  },
+  "For loop": {
+    "prefix": "for",
+    "body": "for ${1:item} in ${2:iterable} {\n    ${3}\n}",
+    "description": "For loop"
+  },
+  "Struct definition": {
+    "prefix": "struct",
+    "body": "struct ${1:Name} {\n    ${2:field}: ${3:type},\n}",
+    "description": "Struct definition"
+  },
+  "Enum definition": {
+    "prefix": "enum",
+    "body": "enum ${1:Name} {\n    ${2:Variant},\n}",
+    "description": "Enum definition"
+  },
+  "Impl block": {
+    "prefix": "impl",
+    "body": "impl ${1:Type} {\n    ${2}\n}",
+    "description": "Implementation block"
+  },
+  "Match expression": {
+    "prefix": "match",
+    "body": "match ${1:value} {\n    ${2:pattern} => ${3:result},\n}",
+    "description": "Match expression"
+  },
+  "Print line": {
+    "prefix": "println",
+    "body": "println(${1:value});",
+    "description": "Print line to stdout"
+  },
+  "Module declaration": {
+    "prefix": "mod",
+    "body": "mod ${1:name};",
+    "description": "Module declaration"
+  },
+  "Use declaration": {
+    "prefix": "use",
+    "body": "use ${1:path}",
+    "description": "Import/module usage"
+  },
+  "Async function": {
+    "prefix": "asyncfn",
+    "body": "async fn ${1:name}($2) -> ${3:void} {\n    ${4}\n}",
+    "description": "Asynchronous function declaration"
+  },
+  "Test function": {
+    "prefix": "test",
+    "body": "#[test]\nfn test_${1:name}() {\n    ${2}\n}",
+    "description": "Test function with #[test] attribute"
+  }
+}
